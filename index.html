@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="Imagenes/Vector.jpg" alt="Logo alura">
+    </header>
+    <main>       
+        <section>
+
+            <textarea autofocus class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <h6 class="informacion">Solo letras minusculas y sin acentos</h6>
+            </div>
+
+            <div class="botones">
+
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar ()">Desencriptar</button>
+
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <textarea class="mensaje" id="cajaTexto" cols="35" rows="17" placeholder="Ningun mensaje ha sido encontrado, ingrese un texto para encriptar o desencriptar"></textarea>
+            
+            </div>
+
+            <div>
+
+                <button class="btn-copiar" onclick="copiarTexto()">Copiar</button>
+        
+            </div>
+
+
+        </section>
+
+
+    </main>
+    
+    <footer class="pie-pagina">
+        
+            <h2>Creado por Jorge Mézquita</h2>
+            <h2>Alura Challenge</h2>
+            <h2>Linkedin: Jorge Mézquita</h2>
+
+    </footer>
+
+    <script src="script.js"></script>
+    
+
+    </body>
+
+</html>
